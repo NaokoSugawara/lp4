@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8% 160px;
+}
+
+header > img {
+    width: 400px;
+    height: 45px;
+}
+
+header > ul {
+    width: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > ul {
+    font-size: 18px;
+}
+
+header > ul li:nth-of-type(2) {
+    opacity: 0.80;
+}
+
+
+
+/* main */
+main {
+    width: 100%;
+    height: 1000px;
+    /* display: grid;
+    grid-template-columns: 1fr 5fr; */
+    padding: 0 7%;
+    margin-bottom: 30px;
+}
+
+main > div {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("/lp4/assets/images/mainVisual_faq_img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 30px;  /* Rounded top-left corner */
+    border-top-right-radius: 30px; /* Rounded top-right corner */
+}
+
+main > div > div {
+    width: 23%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    border-top-right-radius: 30px;
+    padding: 20px 0;
+}
+
+main > div > div > h1 {
+    display: inline-block;
+    color: black;
+    font-size: 45px;
+}
+
+/* link */
+.div__link {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 7%;
+    margin-bottom: 70px;
+}
+
+.div__link p {
+    font-size: 20px;
+    color: black;
+}
+
+.div__link a {
+    color: black;
+}
+
+/* Q and A */
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__box {
+    width: 60%;
+    height: auto;
+    padding: 30px 3%;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+
+.box__kinds {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.box__kinds > img {
+    width: 30px;
+    height: 30px;
+}
+
+.box__kind {
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 5px 1%;
+    margin-left: 1.5%;
+    margin-bottom: 3px;
+}
+
+.box__kinds::after {
+    content: "-";
+    /* height: 100%; */
+    color: gray;
+    font-size: 80px;
+    position: absolute;
+    top: -90%;
+    right: 0;
+
+    
+}
+
+.box__question {
+    font-size: 25px;
+    padding-left: 3%;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.box__answer {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: #168352;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
