@@ -647,7 +647,7 @@ main {
 
 
 
-/* case */
+/* cases */
 .case__dsc {
     font-size: 19px;
     font-family: "Source Han Sans JP";
@@ -759,6 +759,19 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        height: 70px;
+        font-size: 12px;
+    }
+}
+
+
 
 
 /* font */
