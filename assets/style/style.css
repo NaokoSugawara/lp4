@@ -661,7 +661,23 @@ main {
     margin-bottom: 10px;
 }
 
-
+@media screen and (max-width: 767px) {
+    .div__features {
+        margin-bottom: 0;
+    }
+    .features__box {
+        margin-bottom: 15px;
+    }
+    .case__box {
+        height: 250px;
+    }
+    .case__dsc {
+        font-size: 17px;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 
 
