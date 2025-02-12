@@ -217,11 +217,16 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+    main {
+        height: 470px;
+        margin-bottom: 50px;
+    }
     .main__bg {
         background-image: url("/lp4/assets/images/main_visual_sp.png");
         height: 500px;
     }
 }
+
 
 
 /* about us */
@@ -242,7 +247,7 @@ main {
 }
 
 .div__about p {
-    font-size: 20px;
+    font-size: 21px;
     font-family: "Montserrat";
     color: rgb(22, 131, 82);
     font-weight: bold;
@@ -255,7 +260,7 @@ main {
     letter-spacing: 0.1rem;
 }
 
-.about__dsc {
+.about__dsc--pc {
     width: 100%;
     height: 600px;
     display: flex;
@@ -294,8 +299,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* padding: 0 25%; */
 }
 
 .dsc__pic img {
@@ -305,7 +308,91 @@ main {
     
 }
 
+@media screen and (min-width: 768px) {
+    .about__dsc--sp {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 1900px) and (min-width: 768px) {
+    .div__about {
+        margin-bottom: 150px;
+    }
+    .dsc__txt p:nth-of-type(1) {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+    .div__about {
+        margin-bottom: 130px;
+    }
+    .dsc__txt {
+        padding: 0 0 0 2%;
+    }
+    .dsc__pic {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .dsc__txt p:nth-of-type(1) {
+        font-size: 18px;
+    }
+    .about__dsc--pc {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    .dsc__txt p:nth-of-type(1) {
+        font-size: 18px;
+    }
+    .div__about {
+        margin-bottom: 80px;
+    }
+    .about__dsc--pc {
+        padding: 0 1%;
+    }
+    .dsc__txt {
+        padding: 0 0 0 2%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about__dsc--pc {
+        display: none;
+    }
+    .div__about {
+        margin-bottom: 30px;
+    }
+    .div__about p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .div__about h2 {
+        font-size: 22px;
+    }
+    .dsc__pic {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .dsc__txt {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+    }
+    .dsc__txt p:nth-of-type(1) {
+        font-size: 20px;
+        font-weight: 600;
+        /* line-height: 1.7; */
+        letter-spacing: 0.1rem;
+        /* margin-bottom: 30px; */
+    }
+    
+}
 
 
 
