@@ -219,7 +219,7 @@ main {
 @media screen and (max-width: 767px) {
     main {
         height: 470px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     .main__bg {
         background-image: url("/lp4/assets/images/main_visual_sp.png");
@@ -360,6 +360,9 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+    .section__about {
+        height: auto;
+    }
     .about__dsc--pc {
         display: none;
     }
@@ -367,11 +370,13 @@ main {
         margin-bottom: 0;
     }
     .div__about p {
-        font-size: 16px;
+        font-size: 15px;
+        letter-spacing: 0;
         margin-bottom: 0;
     }
     .div__about h2 {
-        font-size: 22px;
+        font-size: 20px;
+        letter-spacing: 0;
     }
     .about__dsc--sp {
         width: 100%;
@@ -390,7 +395,6 @@ main {
     }
     .dsc__txt {
         width: 90%;
-        /* height: 100%; */
         background-color: rgba(255, 255, 255, 0.7);
         border-radius: 30px;
         border: 1px solid black;
@@ -400,24 +404,20 @@ main {
         transform: translate(-50%, -50%);
         z-index: 1;
         padding-left: 5%;
-        /* padding: 5px 2%; */
     }
     .dsc__txt p:nth-of-type(1) {
         font-size: 16px;
-        /* font-weight: 600; */
-        /* line-height: 1.7; */
-        /* letter-spacing: 0.1rem; */
         padding-top: 15px;
         margin-bottom: 10px;
     }
     .dsc__txt p:nth-of-type(2){
         font-size: 13px;
         line-height: 1.7;
-        /* letter-spacing: 0.1rem; */
         padding-bottom: 15px;
     }
     
 }
+
 
 
 
@@ -466,6 +466,56 @@ main {
 .features__box:not(:nth-child(3)){
     padding-right: 30px;
 }
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    .features__dsc {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    .features__dsc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section__features {
+        height: auto;
+        padding-top: 20px;
+    }
+    .div__features {
+        margin-bottom: 0px;
+    }
+    .div__features p {
+        margin-bottom: 5px;
+    }
+    /* .div__features h2 {
+        font-size: 20px;
+    } */
+    .features__container {
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .features__box {
+        width: 100%;
+        height: 290px;
+        margin-bottom: 20px;
+    }
+    .features__dsc {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .features__box:not(:nth-child(3)){
+        padding-right: 0;
+    }
+
+}
+
+
 
 
 /* service */
