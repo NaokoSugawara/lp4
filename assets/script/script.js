@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 2000, 
         pagination: false,
         arrows: false,
-        breakpoints: {   
-            1024: { perPage: 2 },
-            767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
-        },
+        // breakpoints: {   
+        //     1024: { perPage: 2 },
+        //     767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
+        // },
     })
 
 
@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 2000, 
         pagination: false,
         arrows: false,
-        breakpoints: {   
-            1024: { perPage: 2 },
-            767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
-        },
+        // breakpoints: {   
+        //     1024: { perPage: 2 },
+        //     767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
+        // },
     })
 
 
@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 2000, 
         pagination: false,
         arrows: false,
-        breakpoints: {   
-            1024: { perPage: 2 },
-            767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
-        },
+        // breakpoints: {   
+        //     1024: { perPage: 2 },
+        //     767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
+        // },
     })
 
 
