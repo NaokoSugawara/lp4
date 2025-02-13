@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     splide.mount();
 
 
+
     // carousel2
     const splide2 = new Splide('#splide2', {
         type   : 'loop',
@@ -63,12 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
     splide2.mount();
 
 
+
     // carousel3
     const splide3 = new Splide('#splide3', {
         type   : 'loop',
         perPage: 1,      
         perMove: 1,      
-        autoplay: true,
+        autoplay: false,
         interval: 2000, 
         pagination: false,
         arrows: false,
@@ -91,5 +93,71 @@ document.addEventListener('DOMContentLoaded', function () {
     // ------------------------------------------------------------------
 
     splide3.mount();
+
+    
+
+    // carousel4
+    const splide4 = new Splide('#splide4', {
+        type   : 'loop',
+        perPage: 3,      
+        gap: '3%', 
+        autoplay: true,
+        interval: 2000, 
+        pagination: false,
+        arrows: false,
+        breakpoints: {   
+            850: { gap: '10%', },
+            767: { perPage: 1 }
+        },
+    })
+
+
+    // progress bar -----------------------------------------------------
+    const bar4 = splide4.root.querySelector( '.my-carousel-progress-bar4' );
+
+    // Updates the bar width whenever the carousel moves:
+    splide4.on( 'mounted move', function () {
+        const end  = splide4.Components.Controller.getEnd() + 1;
+        const rate = Math.min( ( splide4.index + 1 ) / end, 1 );
+        bar4.style.width = String( 100 * rate ) + '%';
+    } );
+    // ------------------------------------------------------------------
+
+    splide4.mount();
+
+    // carousel5
+    const splide5 = new Splide('#splide5', {
+        type   : 'loop',
+        perPage: 3,      
+        gap: '3%', 
+        autoplay: true,
+        interval: 2000, 
+        pagination: false,
+        arrows: false,
+        breakpoints: {   
+            850: { gap: '10%', },
+            767: { perPage: 1 }
+        },
+    })
+
+    splide5.mount();
+
+        // carousel6
+        const splide6 = new Splide('#splide6', {
+            type   : 'loop',
+            perPage: 3,      
+            gap: '3%', 
+            autoplay: true,
+            interval: 2000, 
+            pagination: false,
+            arrows: false,
+            breakpoints: {   
+                850: { gap: '10%', },
+                767: { perPage: 1 }
+            },
+        })
+    
+        splide6.mount();
+
 });
 

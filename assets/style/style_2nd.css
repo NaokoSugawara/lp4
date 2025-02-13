@@ -282,8 +282,10 @@ main {
 /* products */
 .splide {
     width: 100%;
-    height: 1000px;
+    /* height: 800px; */
+    height: auto;
     padding: 30px 25% 30px;
+    margin-bottom: 50px;
 }
 
 .splide__slide {
@@ -301,7 +303,7 @@ main {
     margin-bottom: 50px;
 }
 
-.my-carousel-progress-bar, .my-carousel-progress-bar2, .my-carousel-progress-bar3 {
+.my-carousel-progress-bar, .my-carousel-progress-bar2, .my-carousel-progress-bar3, .my-carousel-progress-bar4 {
     background: green;
     height: 5px;
     transition: width 400ms ease;
@@ -309,13 +311,14 @@ main {
 }
 
 .splide2 {
-    height: 250px;
+    height: auto;
+    margin-bottom: 50px;
 }
 
 .splide2 .splide__slide {
     justify-content: flex-start;
     align-items: end;
-    font-size: 45px;
+    font-size: 43px;
     /* font-weight: bold; */
 }
 
@@ -330,10 +333,15 @@ main {
     margin-bottom: 30px;
 }
 
+.splide3 {
+    height: auto;
+    margin-bottom: 50px;
+}
+
 .splide__h3 {
     display: inline-block;
     padding: 10px 2%;
-    border-left: 5px solid gray;
+    border-left: 5px solid green;
     margin-left: 5%;
     margin-bottom: 35px;
     font-size: 30px;
@@ -367,13 +375,87 @@ td:nth-child(odd) {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1650px) and (min-width: 1200px) {
+.slide__sp div {
+    /* width: 100%; */
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    /* vertical-align: middle; */
+    padding-left: 18px;
+    border: solid 0.5px #CCCCCC;
+    border-bottom: none;
+    /* border-collapse:  collapse; */
+    font-size: 15px;
+}
+
+.slide__sp div:nth-of-type(odd) {
+    background-color: #F5F5F5;
+}
+
+.slide__sp div:last-child {
+    border-bottom: solid 1px #CCCCCC;
+}
+
+.splide4 {
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.features__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.features__dsc {
+    font-size: 21px;
+    line-height: 1.8;
+    padding-top: 15px;
+}
+
+.splide5 {
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .slide__sp {
+        display: none;
+    }
+    .splide5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1600px) {
+    .h2__sub {
+        padding-left: 20%;
+    }
     .splide {
-        padding: 30px 15% 30px;
+        padding: 30px 20% 30px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
+    .h2__sub {
+        padding-left: 17%;
+    }
+    .splide {
+        padding: 30px 17% 30px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .h2__sub {
+        padding-left: 12%;
+    }
+    .splide {
+        padding: 30px 12% 30px;
     }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 768px) {
+    .h2__sub {
+        padding-left: 5%;
+    }
     .splide {
         padding: 30px 5% 30px;
     }
@@ -387,12 +469,18 @@ td:nth-child(odd) {
     }
     .splide {
         padding: 10px 5% 30px;
+        margin-bottom: 30px;
     }
     .my-carousel-progress {
         margin-bottom: 20px;
     }
+    .my-carousel-progress-bar, .my-carousel-progress-bar2, .my-carousel-progress-bar3, .my-carousel-progress-bar4 {
+        height: 3px;
+    }
     .splide2 {
         height: 130px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
     }
     .splide2 .my-carousel-progress {
         margin-bottom: 20px;
@@ -402,6 +490,46 @@ td:nth-child(odd) {
     }
     .splide2 .splide__slide span {
         font-size: 15px;
+    }
+    .splide__h3 {
+        border-left: 3px solid green;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        padding-left: 15px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .slide__pc {
+        display: none;
+    }
+    .slide__sp {
+        width: 100%;
+    }
+    .splide3 .splide__slide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .splide4__list--sp li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .features__box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .features__dsc {
+        font-size: 16px;
+    }
+    .splide4, .splide5 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .splide6 {
+        margin-bottom: 30px;
     }
 }
 
