@@ -143,6 +143,7 @@ header > ul li:nth-of-type(2) {
 }
 
 
+
 /* main */
 main {
     width: 100%;
@@ -253,6 +254,10 @@ main {
     color: black;
 }
 
+.div__link span {
+    font-weight: 800;
+}
+
 @media screen and (min-width: 768px) {
     .link__sp {
         display: none;
@@ -273,6 +278,7 @@ main {
         letter-spacing: -1.5px;
     }
 }
+
 
 
 
