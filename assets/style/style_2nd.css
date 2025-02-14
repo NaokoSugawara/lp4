@@ -26,6 +26,10 @@ a:hover {
 
 
 /* header */
+body {
+    padding-top: 250px;
+}
+
 header {
     width: 100%;
     height: 75px;
@@ -34,6 +38,11 @@ header {
     padding-top: 50px;
     padding-bottom: 100px;
     margin-bottom: 120px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
 }
 
 header > img {
