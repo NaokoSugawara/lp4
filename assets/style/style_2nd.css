@@ -54,7 +54,7 @@ header > ul {
 
 header > ul li {
     width: 27%;
-    font-size: 17px;
+    font-size: 22px;
 }
 
 header > ul li:nth-of-type(1) {
@@ -88,12 +88,18 @@ header > ul li:nth-of-type(1) {
     }
 }
 
+@media screen and (max-width: 1850px) and (min-width: 1350px) {
+    header > ul li {
+        width: 35%;
+    }
+}
+
 @media screen and (max-width: 1350px) and (min-width: 1000px) {
     header > img {
         width: 50%;
     }
     header > ul li {
-        width: 40%;
+        width: 45%;
     }
 }
 
@@ -102,7 +108,7 @@ header > ul li:nth-of-type(1) {
         width: 60%;
     }
     header > ul li {
-        width: 50%;
+        width: 55%;
     }
 }
 
@@ -130,7 +136,6 @@ header > ul li:nth-of-type(1) {
         grid-column: 2/3;
     }
 }
-
 
 
 /* main */
@@ -601,7 +606,6 @@ td:nth-child(odd) {
 
 
 
-
 /* footer */
 footer {
     width: 100%;
@@ -611,6 +615,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 23px;
 }
 
 footer a {
