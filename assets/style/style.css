@@ -63,7 +63,7 @@ header > ul {
 }
 
 header > ul li {
-    width: 27%;
+    /* width: 27%; */
     font-size: 13px;
 }
 
