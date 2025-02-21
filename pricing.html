@@ -26,19 +26,8 @@
     <title>持続可能な未来農業を実現 | Kirameki Farm</title>
 </head>
 <body>
-    <header>
-        <img src="/assets/images/logo.png" alt="きらめきファームのロゴ">
-        <ul>
-            <li class="noto-sans-jp-regular"><a href="/pricing.html">価格・スペック</a></li>
-            <li class="noto-sans-jp-bold"><a href="/qanda.html">よくあるご質問</a></li>
-        </ul>
-        <div id="hamburgerIcon" class="hamburger-icon">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </header>
 
+    <div id="header-placeholder"></div>
 
     <main>
         <div class="main__pc">
@@ -56,6 +45,8 @@
         <p class="link__sp"><a href="/index.html">トップ</a>　>　価格・スペック</p>
     </div>
 
+
+    <!-- gallery -->
     <h2 class="h2__sub">ギャラリー</h2>
     <section class="splide" id="splide1" aria-label="">
         <!-- Carousel Progress -->
@@ -74,10 +65,11 @@
     </section>
 
 
+    <!-- feature -->
     <h2 class="h2__sub">特長</h2>
-    <section class="splide splide4" id="splide4" aria-label="">
+    <!-- <section class="splide splide4" id="splide4" aria-label=""> -->
         <!-- Carousel Progress -->
-        <div class="my-carousel-progress">
+        <!-- <div class="my-carousel-progress">
             <div class="my-carousel-progress-bar4"></div>
         </div>
         <div class="splide__track">
@@ -120,8 +112,8 @@
                 </li>
             </ul>
         </div>
-    </section>
-    <section class="splide splide4 splide5" id="splide5" aria-label="">
+    </section> -->
+    <!-- <section class="splide splide4 splide5" id="splide5" aria-label="">
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
@@ -204,39 +196,53 @@
                 </li>
             </ul>
         </div>
+    </section> -->
+    <section class="section__feature">
+        <div class="my-carousel-progress">
+            <div class="my-carousel-progress-bar4"></div>
+        </div>
+        <ul class="feature__list">
+            <li class="feature__box">
+                <img class="case__img" src="/assets/images/feature1_pc.png" alt="特徴１の写真">
+                <div class="features__dsc noto-sans-jp-bold">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</div>
+            </li>
+            <li class="feature__box">
+                <img class="case__img" src="/assets/images/feature2_pc.png" alt="特徴２の写真">
+                <div class="features__dsc noto-sans-jp-bold">高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</div>
+            </li>
+            <li class="feature__box">
+                <img class="case__img" src="/assets/images/feature3_pc.png" alt="特徴３の写真">
+                <div class="features__dsc noto-sans-jp-bold">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</div>
+            </li>
+        </ul>
     </section>
 
 
-
-    <h2 class="h2__sub">メーカー希望小売価格</h2>
-    <section class="splide splide2" id="splide2" aria-label="">
+    <!-- price -->
+    <h2 class="h2__sub h2__sub__price">メーカー希望小売価格</h2>
+    <section class="section__price" >
         <!-- Carousel Progress -->
-        <div class="my-carousel-progress">
-            <div class="my-carousel-progress-bar2"></div>
+        <div class="my-carousel-progress my-carousel-progress__price">
+            <div class="my-carousel-progress-bar4"></div>
         </div>
-        <div class="splide__track">
-            <ul class="splide__list montserrat-bold">
-                <li class="splide__slide">¥550,000<span>（税込）</span></li>
-                <li class="splide__slide">¥550,000<span>（税込）</span></li>
-                <li class="splide__slide">¥550,000<span>（税込）</span></li>
-                <li class="splide__slide">¥550,000<span>（税込）</span></li>
-                <li class="splide__slide">¥550,000<span>（税込）</span></li>
-            </ul>
+        <div class="price__yen montserrat-bold">
+            ¥550,000<span>（税込）</span>
         </div>
     </section>
 
-    
-    <h2 class="h2__sub">スペック</h2>
-    <section class="splide splide3" id="splide3" aria-label="">
+
+    <!-- spec -->
+    <h2 class="h2__sub h2__sub__spec">スペック</h2>
+    <section class="section__spec">
         <!-- Carousel Progress -->
         <div class="my-carousel-progress">
-            <div class="my-carousel-progress-bar3"></div>
+            <div class="my-carousel-progress-bar4"></div>
         </div>
         <h3 class="splide__h3 noto-sans-jp-bold">機体</h3>
-        <div class="splide__track">
+        <!-- <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide">
-                    <table class="slide__pc">
+                <li class="splide__slide"> -->
+                    <table>
                         <tr>
                             <td class="noto-sans-jp-bold first-td">ドローン名</td>
                             <td class="noto-sans-jp-regular second-td">アグリ・ファルコン</td>
@@ -270,7 +276,7 @@
                             <td class="noto-sans-jp-regular">自動操縦、植物生育モニタリング、農薬散布</td>
                         </tr>
                     </table>
-                    <div class="slide__sp">
+                    <!-- <div class="slide__sp">
                         <div class="noto-sans-jp-bold">ドローン名</div>
                         <div class="noto-sans-jp-regular">アグリ・ファルコン</div>
                         <div class="noto-sans-jp-bold">製品番号</div>
@@ -287,64 +293,10 @@
                         <div class="noto-sans-jp-regular">150 x 150 x 40 cm</div>
                         <div class="noto-sans-jp-bold">機能・特徴</div>
                         <div class="noto-sans-jp-regular">自動操縦、植物生育モニタリング、農薬散布</div>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <table class="slide__pc">
-                        <tr>
-                            <td class="noto-sans-jp-bold first-td">ドローン名</td>
-                            <td class="noto-sans-jp-regular second-td">アグリ・ファルコン</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">製品番号</td>
-                            <td class="noto-sans-jp-regular">AGF-100</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">飛行時間</td>
-                            <td class="noto-sans-jp-regular">60 分</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">最大積載量</td>
-                            <td class="noto-sans-jp-regular">5 kg</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">操作距離</td>
-                            <td class="noto-sans-jp-regular">3 km</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">機体重量</td>
-                            <td class="noto-sans-jp-regular">8 kg</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">機体寸法</td>
-                            <td class="noto-sans-jp-regular">150 x 150 x 40 cm</td>
-                        </tr>
-                        <tr>
-                            <td class="noto-sans-jp-bold">機能・特徴</td>
-                            <td class="noto-sans-jp-regular">自動操縦、植物生育モニタリング、農薬散布</td>
-                        </tr>
-                    </table>
-                    <div class="slide__sp">
-                        <div class="noto-sans-jp-bold">ドローン名</div>
-                        <div class="noto-sans-jp-regular">アグリ・ファルコン</div>
-                        <div class="noto-sans-jp-bold">製品番号</div>
-                        <div class="noto-sans-jp-regular">AGF-100</div>
-                        <div class="noto-sans-jp-bold">飛行時間</div>
-                        <div class="noto-sans-jp-regular">60 分</div>
-                        <div class="noto-sans-jp-boldr">最大積載量</div>
-                        <div class="noto-sans-jp-regular">5 kg</div>
-                        <div class="noto-sans-jp-bold">操作距離</div>
-                        <div class="noto-sans-jp-regular">3 km</div>
-                        <div class="noto-sans-jp-bold">機体重量</div>
-                        <div class="noto-sans-jp-regular">8 kg</div>
-                        <div class="noto-sans-jp-bold">機体寸法</div>
-                        <div class="noto-sans-jp-regular">150 x 150 x 40 cm</div>
-                        <div class="noto-sans-jp-bold">機能・特徴</div>
-                        <div class="noto-sans-jp-regular">自動操縦、植物生育モニタリング、農薬散布</div>
-                    </div>
-                </li>
+                    </div> -->
+                <!-- </li>
             </ul>
-        </div>
+        </div> -->
     </section>
 
     <!-- contact -->
@@ -352,9 +304,9 @@
         <div class="contact__bg"></div>
         <div class="contact__txt">
             <p>お問い合わせ</p>
-        </div>  
+        </div>
     </section>
-    
+
     <!-- footer -->
     <footer>
         <p><a href="/pricing.html">価格・スペック</a>　｜　<a href="/qanda.html">よくあるご質問</a>                                                                         </p>

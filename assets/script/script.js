@@ -1,4 +1,9 @@
 
+fetch("header.html")
+.then(response => response.text())
+.then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+
 //
 // Accordion
 //
@@ -25,17 +30,17 @@ accordionTitles.forEach((accordionTitle) => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    
+
     // carousel1
     const splide = new Splide('#splide1', {
         type   : 'loop',
-        perPage: 1,      
-        perMove: 1,      
+        perPage: 1,
+        perMove: 1,
         autoplay: true,
-        interval: 2000, 
+        interval: 2000,
         pagination: false,
         arrows: false,
-        // breakpoints: {   
+        // breakpoints: {
         //     1024: { perPage: 2 },
         //     767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
         // },
@@ -60,16 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // carousel2
     const splide2 = new Splide('#splide2', {
         type   : 'loop',
-        perPage: 1,      
-        perMove: 1,      
-        autoplay: true,
-        interval: 2000, 
+        perPage: 1,
+        perMove: 1,
+        // autoplay: true,
+        // interval: 2000,
         pagination: false,
         arrows: false,
-        // breakpoints: {   
-        //     1024: { perPage: 2 },
-        //     767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
-        // },
     })
 
 
@@ -91,13 +92,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // carousel3
     const splide3 = new Splide('#splide3', {
         type   : 'loop',
-        perPage: 1,      
-        perMove: 1,      
+        perPage: 1,
+        perMove: 1,
         autoplay: false,
-        interval: 2000, 
+        interval: 2000,
         pagination: false,
         arrows: false,
-        // breakpoints: {   
+        // breakpoints: {
         //     1024: { perPage: 2 },
         //     767: { type: 'loop', perPage: 1, padding: '5%', gap: '10%', }
         // },
@@ -117,18 +118,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     splide3.mount();
 
-    
+
 
     // carousel4
     const splide4 = new Splide('#splide4', {
         type   : 'loop',
-        perPage: 3,      
-        gap: '3%', 
-        autoplay: true,
-        interval: 2000, 
+        perPage: 3,
+        gap: '3%',
+        // autoplay: true,
+        // interval: 2000,
         pagination: false,
         arrows: false,
-        breakpoints: {   
+        breakpoints: {
             850: { gap: '10%', },
             767: { perPage: 1 }
         },
@@ -148,16 +149,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     splide4.mount();
 
+
     // carousel5
     const splide5 = new Splide('#splide5', {
         type   : 'loop',
-        perPage: 3,      
-        gap: '3%', 
+        perPage: 3,
+        gap: '3%',
         autoplay: true,
-        interval: 2000, 
+        interval: 2000,
         pagination: false,
         arrows: false,
-        breakpoints: {   
+        breakpoints: {
             850: { gap: '10%', },
             767: { perPage: 1 }
         },
@@ -168,18 +170,18 @@ document.addEventListener('DOMContentLoaded', function () {
         // carousel6
         const splide6 = new Splide('#splide6', {
             type   : 'loop',
-            perPage: 3,      
-            gap: '3%', 
+            perPage: 3,
+            gap: '3%',
             autoplay: true,
-            interval: 2000, 
+            interval: 2000,
             pagination: false,
             arrows: false,
-            breakpoints: {   
+            breakpoints: {
                 850: { gap: '10%', },
                 767: { perPage: 1 }
             },
         })
-    
+
         splide6.mount();
 
 });
