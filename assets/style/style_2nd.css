@@ -115,7 +115,7 @@ header > ul li:nth-of-type(1) a {
         margin-bottom: 20px;
     }
     header > img {
-        width: 60%;
+        width: 65%;
         height: auto;
         grid-column: 1/2;
         align-self: center;
@@ -188,7 +188,7 @@ main {
         display: none;
     }
     main {
-        height: 270px;
+        height: 245px;
         padding: 0 5%;
     }
     .main__sp {
@@ -198,14 +198,12 @@ main {
     }
     .main__sp img {
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
     .main__sp h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
-
-
 
 
 
@@ -242,7 +240,7 @@ main {
 
 @media screen and (max-width: 767px) {
     .div__link {
-        height: 50px;
+        height: 40px;
         padding: 0 7%;
         margin-bottom: 0;
     }
@@ -250,11 +248,10 @@ main {
         display: none;
     }
     .div__link p {
-        font-size: 12px;
+        font-size: 10px;
         letter-spacing: -1.5px;
     }
 }
-
 
 
 
@@ -302,6 +299,19 @@ main {
     width: 0;
 }
 
+@media screen and (max-width: 767px) {
+    .h2__sub__gallery {
+        margin-bottom: 7px;
+    }
+    .my-carousel-progress-bar, .my-carousel-progress-bar2, .my-carousel-progress-bar3, .my-carousel-progress-bar4 {
+        height: 3px;
+    }
+    .splide__slide > img {
+        border-radius: 25px;
+    }
+}
+
+
 
 /* feature */
 .section__feature {
@@ -344,6 +354,34 @@ main {
     padding-top: 8px;
 }
 
+@media screen and (max-width: 767px) {
+    .section__feature {
+        margin-bottom: 22px;
+        padding: 0 5%;
+    }
+    .h2__sub__feature {
+        margin-bottom: 7px;
+    }
+    .my-carousel-progress {
+        width: 100%;
+    }
+    .my-carousel-progress-bar4 {
+        width: 40px;
+    }
+    .feature__list {
+        flex-direction: column;
+    }
+    .feature__box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .features__dsc {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
 
 /* price */
 .section__price {
@@ -363,6 +401,20 @@ main {
 .price__yen span {
     font-size: 13px;
 }
+
+@media screen and (max-width: 767px) {
+    .section__price {
+        margin-bottom: 50px;
+        padding: 0 5%;
+    }
+    .h2__sub__price {
+        margin-bottom: 7px;
+    }
+    .my-carousel-progress__price {
+        margin-bottom: 15px;
+    }
+}
+
 
 
 
@@ -407,14 +459,59 @@ td:nth-child(odd) {
     font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+    .slide__sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section__spec {
+        margin-bottom: 50px;
+        padding: 0 5%;
+    }
+    .h2__sub__spec {
+        margin-bottom: 7px;
+    }
+    .my-carousel-progress__spec {
+        margin-bottom: 17px;
+    }
+    .splide__h3 {
+        /* padding: 1px 4%; */
+        /* padding-top: 3px; */
+        padding-left: 4%;
+        border-left: 2px solid green;
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .slide__pc {
+        display: none;
+    }
+    .slide__sp div {
+        /* display: flex;
+        align-items: center; */
+        height: 32px;
+        line-height: 32px;
+        padding-left: 5%;
+        font-size: 13px;
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        border-right: 1px solid #CCCCCC;
+    }
+    .slide__sp div:nth-child(odd)  {
+        background-color: #F5F5F5;
+    }
+    .slide__sp div:last-child  {
+        border-bottom: 1px solid #CCCCCC;
+    }
+}
 
 
 
 
 
-
-
-
+/* legacy -- not sure if I can remove these */
 @media screen and (min-width: 768px) {
     .slide__sp {
         display: none;
@@ -426,24 +523,19 @@ td:nth-child(odd) {
 
 @media screen and (max-width: 767px) {
     .h2__sub {
-        font-size: 20px;
+        font-size: 17px;
         padding-left: 5%;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     .splide {
-        padding: 10px 5% 30px;
+        padding: 0 5% 30px;
         margin-bottom: 30px;
     }
-    .my-carousel-progress {
+    /* .my-carousel-progress {
         margin-bottom: 20px;
-    }
+    } */
     .my-carousel-progress-bar, .my-carousel-progress-bar2, .my-carousel-progress-bar3, .my-carousel-progress-bar4 {
         height: 3px;
-    }
-    .splide2 {
-        height: 130px;
-        padding-bottom: 10px;
-        margin-bottom: 0;
     }
     .splide2 .my-carousel-progress {
         margin-bottom: 20px;
@@ -453,15 +545,6 @@ td:nth-child(odd) {
     }
     .splide2 .splide__slide span {
         font-size: 15px;
-    }
-    .splide__h3 {
-        border-left: 3px solid green;
-        padding-top: 3px;
-        padding-bottom: 4px;
-        padding-left: 15px;
-        margin-left: 0;
-        margin-bottom: 25px;
-        font-size: 20px;
     }
     .slide__pc {
         display: none;
@@ -483,16 +566,6 @@ td:nth-child(odd) {
         width: 100%;
         height: auto;
         margin-bottom: 20px;
-    }
-    .features__dsc {
-        font-size: 16px;
-    }
-    .splide4, .splide5 {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    .splide6 {
-        margin-bottom: 30px;
     }
 }
 
@@ -547,18 +620,18 @@ td:nth-child(odd) {
 
 @media screen and (max-width: 767px) {
     .section__contact {
-        height: 350px;
+        height: 280px;
     }
     .contact__bg {
-        height: 350px;
+        height: 280px;
         background-image: url("/assets/images/pricing_contact_sp.png");
     }
     .contact__txt {
         width: 90%;
-        padding: 25px 1%;
+        padding: 20px 1%;
         border: 2px solid white;
-        font-size: 18px;
-        transform: translate(-50%, 170%);
+        font-size: 15px;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -583,7 +656,7 @@ footer a {
 @media screen and (max-width: 767px) {
     footer {
         height: 60px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 

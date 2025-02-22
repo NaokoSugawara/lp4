@@ -391,7 +391,7 @@ main {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .features__box img {
@@ -478,6 +478,15 @@ main {
     background-color: rgb(22, 131, 82);
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service__box:hover p {
+    color: green;
+}
+
+.service__box:hover {
+    background-color: lightyellow;
 }
 
 .service__box--large {
