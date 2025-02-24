@@ -26,7 +26,6 @@ a:hover {
 
 
 
-
 /* header */
 body {
     padding-top: 135px;
@@ -36,7 +35,7 @@ header {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1.3fr 6fr 6fr 1.3fr;
+    grid-template-columns: 1.2fr 6fr 6fr 1fr;
     padding-top: 50px;
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -99,8 +98,52 @@ header > ul li:nth-of-type(2) a {
     margin-bottom: 0;
 }
 
+.div__dtopdown {
+    flex-direction: column;
+    padding: 0 5%;
+    margin-bottom: 25px;
+}
+
+.header--dropdown {
+    background-color: #168352;
+    width: 90%;
+    height: auto;
+    padding: 10px 0;
+    /* margin: 0 5%; */
+    position: absolute;
+    top: 55px;
+    right: 5%;
+    z-index: 2;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    border-radius: 25px;
+}
+
+.header--dropdown-item {
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    list-style: none;
+}
+/* .header--dropdown li:last-child {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    list-style: none;
+} */
+.header--dropdown-item a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
 @media screen and (min-width: 768px) {
     .hamburger-icon {
+        display: none;
+    }
+    .header--dropdown {
         display: none;
     }
 }
@@ -112,6 +155,7 @@ header > ul li:nth-of-type(2) a {
     header {
         grid-template-columns: 4fr 1fr;
         /* height: auto; */
+        height: 55px;
         padding-top: 5px;
         padding-left: 10px;
         padding-bottom: 0;
@@ -132,6 +176,7 @@ header > ul li:nth-of-type(2) a {
         grid-column: 2/3;
     }
 }
+
 
 
 
@@ -192,7 +237,7 @@ main {
         display: none;
     }
     main {
-        height: 245px;
+        height: 100%;
         padding: 0 5%;
     }
     .main__sp {
@@ -202,6 +247,8 @@ main {
     }
     .main__sp img {
         width: 100%;
+        height: 200px;
+        border-radius: 25px;
         padding-bottom: 15px;
     }
     .main__sp h1 {
@@ -332,11 +379,11 @@ section {
 
 @media screen and (max-width: 767px) {
     section {
-        margin-bottom: 150px;
+        margin-bottom: 120px;
     }
     .section__box {
         width: 90%;
-        padding: 20px 6%;
+        padding: 10px 6%;
         margin-bottom: 20px;
     }
     .box__kinds {
@@ -346,19 +393,19 @@ section {
     }
     .box__kinds::after {
         content: "ー";
-        font-size: 25px;
+        font-size: 22px;
         top: -30%;
     }
     .box__kinds > img {
-        width: 23px;
-        height: 20px;
+        width: 20px;
+        height: 18px;
         display: inline-flex;
         align-items: center;
     }
     .box__kind {
-        font-size: 11px;
-        border-radius: 5px;
-        padding: 3px 3%;
+        font-size: 9px;
+        border-radius: 3px;
+        padding: 2px 4%;
         margin-left: 5%;
         margin-bottom: 0;
         /* display: inline-block;
@@ -367,16 +414,17 @@ section {
         /* vertical-align: middle; */
     }
     .box__kind:not(:nth-of-type(1)) {
-        margin-left: 3%;
+        margin-left: 2%;
     }
     .box__question {
         padding-left: 10%;
         padding-right: 11%;
-        font-size: 15px;
-        margin-bottom: 5px;
+        font-size: 13px;
+        line-height: 1.8;
+        margin-bottom: 2px;
     }
     .accordion__content {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.8;
     }
 }
@@ -387,7 +435,7 @@ section {
 /* footer */
 footer {
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #168352;
     color: white;
     display: flex;

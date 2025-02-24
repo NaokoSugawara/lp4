@@ -2,9 +2,33 @@
 
 // header inclusion
 
-fetch("header.html")
-.then(response => response.text())
-.then(data => document.getElementById("header-placeholder").innerHTML = data);
+// fetch("header.html")
+// .then(response => response.text())
+// .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+
+
+
+// Nav for SP
+// open dropdown menu when hamburger icon is clicked
+
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+hamburgerIcon.addEventListener('click', function() {
+    const dropdownList = document.getElementById('dropdownList');
+    if (dropdownList.style.display === 'none') {
+        dropdownList.style.display = 'block';
+    } else {
+        dropdownList.style.display = 'none';
+    }
+});
+
+
+// close dropdown menu when windowsize is changed
+window.addEventListener('resize', () => {
+    const dropdownList = document.getElementById('dropdownList');
+    dropdownList.style.display = "none";
+})
+
 
 
 
